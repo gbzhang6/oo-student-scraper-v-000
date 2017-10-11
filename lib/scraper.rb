@@ -39,6 +39,7 @@ class Scraper
       elsif social.css('img').attr('src').value.include?("rss")
         student_hash[:blog] = social.attr('href')
       end
+    end
 
       doc.css('html').each do |details|
       student_hash[:profile_quote] = doc.css(".profile-quote").text.strip
