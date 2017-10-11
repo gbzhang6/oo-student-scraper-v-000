@@ -33,7 +33,7 @@ class Scraper
       if social.css('img').attr('src').value.include?("twitter")
         student_hash[:twitter] = social.attr('href')
       elsif social.css('img').attr('src').value.include?("linkedin")
-        student_hash[:linked] = social.attr('href')
+        student_hash[:linkedin] = social.attr('href')
       elsif social.css('img').attr('src').value.include?("github")
         student_hash[:github] = social.attr('href')
       elsif social.css('img').attr('src').value.include?("rss")
