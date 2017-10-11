@@ -41,10 +41,9 @@ class Scraper
       end
     end
 
-      doc.css('html').each do |details|
+    doc.css('html').each do |details|
       student_hash[:profile_quote] = doc.css(".profile-quote").text.strip
       student_hash[:bio] = doc.css(".description-holder").css("p").text
-
     end
 
 
